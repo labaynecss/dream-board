@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Montserra;
+  src: url(../public/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+  color: white;
+  /* color-scheme: dark; */
+  font-family: Montserra;
+  /* outline: 1px solid red; */
+}
+
+.rectangle {
+  border-radius: 100px 100px 100px 240px;
+  background: rgba(0, 0, 0, 0.13);
+  width: 524px;
+  height: 455px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 844px) {
+  .rectangle {
+    width: 318px; /* Full width on smaller screens */
+    height: 277px; /* Adjust height automatically to maintain aspect ratio */
+    flex-shrink: 0;
+  }
+}
