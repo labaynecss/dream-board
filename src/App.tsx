@@ -6,7 +6,7 @@ function App() {
     <>
       <div className=" bg-[#302C42] h-full w-full">
         <Header />
-        <Hero />
+        <Hero />  
       </div>
     </>
   );

@@ -36,6 +36,26 @@ export const Vector1 = () => {
     </div>
   );
 };
+
+export const Arrow = () => {
+  return (
+    <svg
+      className="hidden lg:block"
+      xmlns="http://www.w3.org/2000/svg"
+      width="100"
+      height="100"
+      viewBox="0 0 100 100"
+      fill="none">
+      <path
+        d="M70.8334 50L29.1667 50M70.8334 50L54.1667 66.6667M70.8334 50L54.1667 33.3333"
+        stroke="#C0B7E8"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
 export const Vector2 = (props: Vectors) => {
   return (
     <>
@@ -69,7 +89,7 @@ export const Vector2 = (props: Vectors) => {
           </defs>
         </svg>
       </div>
-      <div className="relative -top-[225px] -left-[390px] lg:left-[310px] lg:-top-[240px] ">
+      <div className="relative -top-[225px] -left-[390px] lg:left-[310px] lg:-top-[190px] ">
         <svg
           className=" stroke-[#343045] w-[414px]  lg:h-[669px] h-[600px] flex-shrink-0"
           xmlns="http://www.w3.org/2000/svg"

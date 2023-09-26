@@ -1,14 +1,15 @@
 import meta from '../assets/img/new.jpg';
-import { Vector1, Vector2 } from '../components/vectors';
+import { InputField } from '../components/button/InputField';
+import { Arrow, Vector1, Vector2 } from '../components/vectors';
 
 const Hero = () => {
   return (
     <section className="h-full mt-[100px]">
-      <div className=" container  max-w-screen-lg    ">
+      <div className=" container  w-[1440px]    ">
         <div className="flex flex-row   items-center">
           <Vector1 />
-          <div className=" absolute -left-[15px] top-[490px] lg:-left-[620px] lg:top-[200px] px-[10px] lg:px-[700px]  ml-8 z-50 ">
-            <h1 className=" text-[30px]  lg:text-[46px] font-bold leading-normal   mb-8 ">
+          <div className=" absolute -left-[20px] top-[490px] lg:-left-[690px] lg:top-[200px]  lg:px-[745px]  ml-8 z-50  ">
+            <h1 className=" text-[30px]  lg:text-[46px] font-bold leading-normal   mb-[36px] ">
               <span className="text-primary text-[36px] lg:text-[46px]">
                 Diving
               </span>{' '}
@@ -17,14 +18,19 @@ const Hero = () => {
                 Time
               </span>
             </h1>
-            <p className=" hidden md:hidden lg:block text-[16px] font-normal leading-normal tracking-normal ">
+            <p className=" hidden md:hidden lg:block text-[16px] font-normal leading-normal tracking-normal mb-[66px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget.
               Lectus mauris eros in vitae .
             </p>
+            <div className="flex flex-row items-center ml-[75px]  lg:ml-0">
+              <InputField label="Build your Passion" width="w-[214px]" />{' '}
+              <Arrow />
+            </div>
           </div>
+
           <Vector2>
-            <div>     
+            <div>
               <img
                 src={meta}
                 alt=""
@@ -32,8 +38,8 @@ const Hero = () => {
               />
             </div>
           </Vector2>
-          <div className="absolute m-10 top-[690px]">
-            <div className=" relative bg-red-200 h-[167px] w-[1272px] rounded-full"></div>
+          <div className="absolute m-10 lg:top-[650px] top-[680px] -left-6 lg:left-0">
+            <div className=" relative bg-gradient h-[167px] w-[347px] lg:w-[1272px] rounded-full"></div>
           </div>
         </div>
       </div>
